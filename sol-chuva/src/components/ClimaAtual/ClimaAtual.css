@@ -1,0 +1,153 @@
+
+.clima-atual {
+  margin-top: 24px;
+  padding: 24px;
+  background: #25282f;
+  color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.12);
+}
+
+.clima-cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.clima-cabecalho h2 {
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+
+.clima-cabecalho p {
+  color: #c1c3cb;
+  font-size: 14px;
+}
+
+.clima-atualizado {
+  font-size: 11px;
+  color: #b6b8c1;
+}
+
+.clima-conteudo {
+  display: grid;
+  grid-template-columns: minmax(180px, 0.8fr) minmax(0, 2fr);
+  align-items: center;
+  gap: 32px;
+}
+
+.clima-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.clima-principal img {
+  width: 115px;
+  height: 115px;
+  object-fit: contain;
+}
+
+.clima-principal h3 {
+  font-size: 52px;
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+.clima-principal p {
+  font-size: 15px;
+  color: #d0d0d5;
+  margin-top: 5px;
+}
+
+.indicadores-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+  width: 100%;
+}
+
+.indicador-card {
+  min-height: 75px;
+  padding: 14px;
+  border-radius: 12px;
+  background: #343840;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-width: 0;
+}
+
+.indicador-titulo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #c6c8cf;
+  font-size: 13px;
+}
+
+.indicador-titulo img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.indicador-card strong {
+  color: #ffffff;
+  font-size: 15px;
+  white-space: nowrap;
+}
+
+@media (max-width: 750px) {
+  .clima-conteudo {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .clima-principal img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .clima-principal h3 {
+    font-size: 44px;
+  }
+}
+
+@media (max-width: 480px) {
+  .clima-atual {
+    padding: 16px;
+    border-radius: 16px;
+  }
+
+  .clima-cabecalho h2 {
+    font-size: 21px;
+  }
+
+  .clima-atualizado {
+    font-size: 10px;
+  }
+
+  .indicadores-grid {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .indicador-card {
+    padding: 12px;
+    min-height: 65px;
+  }
+
+  .indicador-titulo {
+    font-size: 12px;
+  }
+
+  .indicador-card strong {
+    font-size: 14px;
+  }
+}

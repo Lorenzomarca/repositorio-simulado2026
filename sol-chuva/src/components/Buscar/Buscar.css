@@ -1,0 +1,128 @@
+
+.buscar {
+  width: 100%;
+  margin-top: 28px;
+}
+
+.buscar-campo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.buscar-campo input {
+  flex: 1;
+  min-width: 0;
+  height: 48px;
+  padding: 0 14px;
+  background-color: #ffffff;
+  border: 1px solid #d8d8e0;
+  border-radius: 12px;
+  color: #333333;
+  outline: none;
+}
+
+.buscar-campo input:focus {
+  border-color: #483dad;
+}
+
+.botao-buscar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  height: 48px;
+  padding: 0 20px;
+  background-color: #483dad;
+  color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.botao-buscar img {
+  width: 16px;
+  height: 16px;
+  filter: brightness(0) invert(1);
+}
+
+.botao-buscar:hover {
+  background-color: #392e91;
+}
+
+.cidades-rapidas {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.cidades-rapidas button {
+  padding: 7px 12px;
+  background-color: #ffffff;
+  border: 1px solid #e1e1e8;
+  border-radius: 10px;
+  color: #444444;
+  font-size: 13px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.cidades-rapidas button:hover {
+  border-color: #483dad;
+  color: #483dad;
+  background-color: #f5f4ff;
+}
+
+/* Telas menores */
+@media (max-width: 480px) {
+  .buscar {
+    margin-top: 20px;
+  }
+
+  .buscar-campo {
+    gap: 6px;
+  }
+
+  .buscar-campo input {
+    height: 44px;
+    font-size: 14px;
+    padding: 0 10px;
+  }
+
+  .botao-buscar {
+    height: 44px;
+    padding: 0 12px;
+    gap: 5px;
+    font-size: 14px;
+  }
+
+  .botao-buscar img {
+    width: 14px;
+    height: 14px;
+  }
+
+  .cidades-rapidas {
+    gap: 7px;
+    margin-top: 14px;
+  }
+
+  .cidades-rapidas button {
+    padding: 7px 10px;
+    font-size: 12px;
+  }
+}
+.mensagem-erro {
+  margin-top: 12px;
+  color: #ff0000;
+  font-size: 14px;
+}
+
+.botao-buscar:disabled,
+.cidades-rapidas button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
