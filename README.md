@@ -1,1 +1,1 @@
-# reposit-rio-simulado2026
+# repositorio-simulado2026
