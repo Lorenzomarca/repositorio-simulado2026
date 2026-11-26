@@ -1,14 +1,21 @@
-.app {
-  width: 100%;
-  max-width: 1000px;
-  min-height: 100vh;
-  margin: 0 auto;
-  padding: 25px 24px;
-  background-color: #f0f1f8;
-}
-
-@media (max-width: 600px) {
-  .app {
-    padding: 16px 12px;
-  }
-}
+#root { width: 100%; min-height: 100vh; }
+.app { width: 100%; min-height: 100vh; margin: 0; padding: 24px clamp(16px, 4vw, 52px); background: #fff; }
+.app-com-clima { max-width: 1400px; margin: 0 auto; }
+.app-inicial { min-height: 100vh; display: flex; align-items: center; justify-content: center; background: #f4f3fb; padding: 24px; }
+.inicio { width: min(100%, 760px); text-align: center; }
+.inicio-marca { margin-bottom: 34px; }
+.inicio-marca img { width: 92px; height: 92px; object-fit: contain; display: block; margin: 0 auto 12px; }
+.inicio-marca h1 { color: #333; font-size: 30px; font-weight: 700; letter-spacing: -0.6px; }
+.inicio-marca p { color: #777; font-size: 14px; margin-top: 6px; }
+.inicio-texto { margin-bottom: 18px; }
+.inicio-texto h2 { color: #333; font-size: 24px; font-weight: 600; margin-bottom: 7px; }
+.inicio-texto p { color: #777; font-size: 14px; }
+.inicio .buscar { width: min(100%, 680px); margin: 0 auto; }
+.inicio .buscar-campo input { padding: 14px 16px; font-size: 15px; border-radius: 8px; }
+.inicio .botao-buscar { border-radius: 8px; padding: 12px 20px; }
+.inicio .cidades-rapidas { justify-content: center; margin-top: 14px; gap: 8px; }
+.inicio .cidades-rapidas button { border-radius: 20px; padding: 7px 13px; font-size: 13px; }
+.rodape { text-align: center; padding: 18px 10px 8px; color: #777; font-size: 12px; }
+.rodape a { color: #483DAD; }
+.rodape-inicial { margin-top: 48px; }
+@media (max-width: 600px) { .app { padding: 14px; } .app-inicial { padding: 18px; } .inicio-marca img { width: 78px; height: 78px; } .inicio-marca h1 { font-size: 27px; } .inicio-texto h2 { font-size: 21px; } .inicio .buscar-campo { gap: 6px; } .inicio .botao-buscar { padding: 10px 13px; } .rodape-inicial { margin-top: 32px; } }

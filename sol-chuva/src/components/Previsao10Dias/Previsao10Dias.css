@@ -1,0 +1,15 @@
+.previsao { margin-top:16px; padding:0; background:#fff; }
+.previsao h2 { font-size:18px; font-weight:600; margin-bottom:10px; color:#333; }
+.previsao-grid { display:grid; grid-template-columns:repeat(5,minmax(0,1fr)); gap:8px; }
+.previsao-card { border:1px solid #e0e0e0; border-radius:8px; padding:10px 6px; text-align:center; display:flex; flex-direction:column; align-items:center; gap:5px; min-width:0; background:#fff; }
+.previsao-card h3 { font-size:12px; text-transform:capitalize; color:#333; }
+.previsao-data { color:#666; font-size:11px; }
+.previsao-icone { width:42px; height:42px; object-fit:contain; }
+.previsao-descricao { font-size:10px; color:#666; min-height:22px; display:flex; align-items:center; justify-content:center; }
+.previsao-temperaturas { display:flex; justify-content:center; gap:7px; font-size:13px; }
+.previsao-temperaturas strong { color:#333; }
+.previsao-temperaturas span { color:#777; }
+.previsao-chuva { display:flex; align-items:center; gap:3px; font-size:11px; color:#483DAD; font-weight:600; }
+.previsao-chuva img { width:12px; height:12px; }
+@media(max-width:760px) { .previsao-grid { grid-template-columns:repeat(3,minmax(0,1fr)); } }
+@media(max-width:480px) { .previsao-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:7px; } .previsao-card { padding:9px 5px; } }

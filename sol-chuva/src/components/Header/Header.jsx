@@ -1,18 +1,17 @@
-import "./Header.css";
+import React from 'react'
+import configuracao from '../../config'
+import './Header.css'
 
 function Header() {
   return (
     <header className="header">
-      <div className="header-logo">
-        <img src="/logo/solchuva.svg" alt="Sol Chuva" />
-      </div>
-
-      <div className="header-texto">
-        <h1>Sol Chuva</h1>
-        <p>O tempo certo, onde você estiver</p>
+      <img className="header-logo" src={configuracao.logo} alt={configuracao.nome} />
+      <div>
+        <h1>{configuracao.nome}</h1>
+        <p>{configuracao.slogan}</p>
       </div>
     </header>
-  );
+  )
 }
 
-export default Header;
+export default Header
